@@ -1,0 +1,329 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+/* ******************************* DESKTOP MENU STYLES ******************************* */
+
+.desktop-menu {
+	display: none;
+	font-family: 'montserrat';
+	text-transform: uppercase;
+}
+
+.desktop-menu ul li {
+	display: inline-block;
+	padding: 0 2%;
+}
+
+.desktop-menu ul li a {
+	color: black;
+	font-weight:bold;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.desktop-menu ul li a:hover {
+	color: white;
+	font-weight: bold;
+	animation: bounce;
+	animation-duration: 1s;
+}
+
+/* ******************************* DESKTOP MENU STYLES ******************************* */
+/* ******************************* HAMBURGER MENU STYLES ******************************* */
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block; font-family: 'montserrat';  padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+/* ******************************* HAMBURGER MENU STYLES ******************************* */
+/* ******************************* NATIVE STYLES ******************************* */
+@font-face{
+font-family: "oliverblush";
+src: url('./fonts/oliverblush.ttf') format('truetype');
+}
+
+@font-face{
+font-family: "montserrat";
+src: url('./fonts/Montserrat.ttf') format('truetype');
+}
+
+header{
+	background-color: white;
+	height:100px;
+}
+
+
+img {
+	width: 100%;
+}
+
+
+.logo {
+	max-width: 80px;
+	display: inline-block;
+	margin: 3% 0 0 3%;
+	position: absolute;
+	float:left;
+}
+
+.images {
+	margin: 0 0% 5% 0%;
+	width: 100%;
+	max-width: 500px;
+	display: block;
+}
+
+section {
+	text-align: center;
+	background-color: #BCB5C5;
+	padding: 250px 5px 250px 5px;
+}
+
+h1 {
+	font-family: 'oliverblush';
+	font-size: 3rem;
+}
+
+h2 {
+	font-family: 'montserrat';
+	text-transform: uppercase;
+	color: white;
+	font-size: 1rem;
+	letter-spacing: 2px;
+}
+
+p {
+	font-family: 'montserrat';
+	margin: 30px;
+}
+
+h3 {
+	font-family: 'montserrat';
+	font-size: 3rem;
+	margin: 10px 20px 0px 25px;
+	color: #BCB5C5;
+	text-shadow: 2px 2px black;
+}
+
+
+figcaption {
+	font-family: 'oliverblush';
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+footer {
+	background-color: grey;
+	padding: 10px 0 10px 0;
+	text-align: center;
+}
+
+footer p {
+	color:white;
+	font-weight: bold;
+}
+
+/* ******************************* NATIVE STYLES ******************************* */
+
+
+
+/* ******************************* MIN WIDTH 615 - MAX WIDTH 887 MEDIA QUERY STYLES ******************************* */
+
+
+
+@media (max-width: 887px) and (min-width: 615px) {
+	.images {
+		padding: 0 0 0 20%;
+	}
+
+}
+/* ******************************* MIN WIDTH 615 - MAX WIDTH 887 MEDIA QUERY STYLES ******************************* */
+/* ******************************* MIN WIDTH 888 MEDIA QUERY STYLES ******************************* */
+@media (min-width: 888px) {
+
+	.menu {
+		display: none;
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	.cross {
+		display: none;
+	}
+
+	.desktop-menu {
+		display:inline;
+		width: 100%;
+		text-align: right;
+		position: relative;
+	}
+
+	.desktop-menu ul li a:hover {
+		color:#BCB5C5;
+		font-weight: bold;
+	}
+
+	.desktop-menu ul {
+		float: right;
+		width: 100%;
+		margin: 4% 0 0 0;
+	}
+
+	header {
+		height: 120px;
+	}
+
+	.images {
+		padding: 0 0 0 15%;
+	}
+
+	h3 {
+		padding: 2% 0 0 5%;
+	}
+
+	.text {
+		float: right;
+		width: 35%;
+	}
+
+	.images {
+		float: left;
+		width: 70%;
+	}
+
+	footer {
+		clear: both;
+	}
+}
+/* ******************************* MIN WIDTH 888 MEDIA QUERY STYLES ******************************* */
+/* ******************************* MIN WIDTH 888 - MAX WIDTH 1016 MEDIA QUERY STYLES ******************************* */
+@media (max-width: 1016px) and (min-width: 888px) {
+	aside.text {
+		width: 32%;
+	}
+	.images {
+		width: 50%;
+	}
+}
+/* ******************************* MIN WIDTH 888 - MAX WIDTH 1016 MEDIA QUERY STYLES ******************************* */
+/* ******************************* MIN WIDTH 1200 MEDIA QUERY STYLES ******************************* */
+@media (min-width: 1200px) {
+	.menu {
+		display: none;
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	.cross {
+		display: none;
+	}
+
+	.desktop-menu {
+		display:inline-block;
+		text-align: center;
+	}
+
+	.desktop-menu ul{
+		padding: 10px 0 0 0;
+
+	}
+
+	.desktop-menu ul li a:hover {
+		color:white;
+		font-weight: bold;
+	}
+
+
+	header {
+		background-color: #BCB5C5;
+		height: 150px;
+	}
+	section {
+		background-color: white;
+
+	}
+	h2 {
+		color:#BCB5C5;
+	}
+	.logo {
+		padding: 0 0 0 200px;
+	}
+
+	.text {
+		float: right;
+		width: 50%;
+	}
+
+	.images {
+		float: left;
+		width: 50%;
+	}
+
+	footer {
+		clear: both;
+	}
+
+}
+/* ******************************* MIN WIDTH 1200 MEDIA QUERY STYLES ******************************* */
+/* ******************************* MIN WIDTH 1127 - MAX WIDTH 1266 MEDIA QUERY STYLES ******************************* */
+
+@media (max-width: 1266px) and (min-width: 1127px) {
+	aside.text {
+		width: 40%;
+	}
+}
+/* ******************************* MIN WIDTH 1127 - MAX WIDTH 1266 MEDIA QUERY STYLES ******************************* */
+/* ******************************* MIN WIDTH 1446 - MAX WIDTH 1267 MEDIA QUERY STYLES ******************************* */
+
+@media (max-width: 1446px) and (min-width: 1267px) {
+	aside.text {
+		width: 45%;
+	}
+}
+/* ******************************* MIN WIDTH 1446 - MAX WIDTH 1267 MEDIA QUERY STYLES ******************************* */
