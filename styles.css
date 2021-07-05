@@ -145,7 +145,59 @@ h3 {
 	margin: 10px 20px 0px 25px;
 	color: #BCB5C5;
 	text-shadow: 2px 2px black;
+
 }
+
+
+h4 {
+	font-family: 'oliverblush';
+	font-size: 3rem;
+	background-color: white;
+	text-align: center;
+	margin: 10%;
+}
+
+h5 {
+		font-family: 'montserrat';
+    text-transform: uppercase;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 2px;
+		padding: 20%;
+		background-color: #BCB5C5;
+
+	}
+
+	.gallery {
+		 padding: 0% 0 0 0;
+		 background-color: white;
+
+	}
+
+a {
+	text-decoration: none;
+}
+
+a h5:hover {
+	color: black;
+}
+
+.contact {
+	margin: 20% 10%;
+	text-align: center;
+
+}
+
+.contact h5 {
+	padding: 5%;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+}
+
+
 
 
 figcaption {
@@ -183,6 +235,11 @@ footer p {
 	.images {
 		padding: 0 0 0 20%;
 	}
+
+	h4#work {
+		margin: 30% 0 20%;
+	}
+
 
 }
 /* ******************************* MIN WIDTH 615 - MAX WIDTH 887 MEDIA QUERY STYLES ******************************* */
@@ -244,6 +301,11 @@ footer p {
 	footer {
 		clear: both;
 	}
+
+	h4#work {
+		margin: 60% 0 20%;
+	}
+
 }
 /* ******************************* MIN WIDTH 888 MEDIA QUERY STYLES ******************************* */
 /* ******************************* MIN WIDTH 888 - MAX WIDTH 1016 MEDIA QUERY STYLES ******************************* */
@@ -254,7 +316,59 @@ footer p {
 	.images {
 		width: 50%;
 	}
+
+	h4#work {
+		margin: 60% 0 20%;
+	}
+
 }
+
+@media (min-width: 1020px) {
+	.projects1 {
+		display: flex;
+		justify-content: center;
+
+	}
+
+	.left {
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 450px;
+		margin: 0 1% 0 0;
+		justify-content: center;
+
+	}
+
+	.right {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 450px;
+		margin: 0 0 0 1%;
+		justify-content: center;
+
+	}
+
+	.projects2 img {
+		margin: 1%;
+	}
+
+	.cats {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		justify-content: space-around;
+		margin: 1%;
+	}
+
+	.cats img {
+		max-width: 300px;
+		margin: 5%;
+	}
+
+}
+
 /* ******************************* MIN WIDTH 888 - MAX WIDTH 1016 MEDIA QUERY STYLES ******************************* */
 /* ******************************* MIN WIDTH 1200 MEDIA QUERY STYLES ******************************* */
 @media (min-width: 1200px) {
@@ -289,6 +403,7 @@ footer p {
 	header {
 		background-color: #BCB5C5;
 		height: 150px;
+
 	}
 	section {
 		background-color: white;
@@ -315,6 +430,11 @@ footer p {
 		clear: both;
 	}
 
+	h4#work {
+		margin: 40% 0 20%;
+	}
+
+
 }
 /* ******************************* MIN WIDTH 1200 MEDIA QUERY STYLES ******************************* */
 /* ******************************* MIN WIDTH 1127 - MAX WIDTH 1266 MEDIA QUERY STYLES ******************************* */
@@ -323,13 +443,46 @@ footer p {
 	aside.text {
 		width: 40%;
 	}
+	h4#work {
+    margin: 50% 0 20%;
+	}
+
 }
 /* ******************************* MIN WIDTH 1127 - MAX WIDTH 1266 MEDIA QUERY STYLES ******************************* */
 /* ******************************* MIN WIDTH 1446 - MAX WIDTH 1267 MEDIA QUERY STYLES ******************************* */
 
-@media (max-width: 1446px) and (min-width: 1267px) {
+@media (min-width: 1267px) {
 	aside.text {
 		width: 45%;
 	}
+
+	h4#work {
+    margin: 50% 0 20%;
+	}
+
+	.projects1 {
+		display: flex;
+
+	}
+
+	.left {
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+
+	}
+
+	.right {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	.projects1 img {
+		margin: 5%;
+	}
+
 }
 /* ******************************* MIN WIDTH 1446 - MAX WIDTH 1267 MEDIA QUERY STYLES ******************************* */
