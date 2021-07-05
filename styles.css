@@ -8,6 +8,10 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ******************************* DESKTOP MENU STYLES ******************************* */
 
 .desktop-menu {
@@ -182,19 +186,23 @@ a h5:hover {
 	color: black;
 }
 
-.contact {
-	margin: 20% 10%;
+#contact {
+	margin: 0% 10% 20% 10%;
 	text-align: center;
 
 }
 
-.contact h5 {
+#contact h5 {
 	padding: 5%;
 }
 
 header {
 	position: fixed;
 	width: 100%;
+}
+
+#home {
+	height: 230px;
 }
 
 
@@ -222,6 +230,14 @@ footer p {
 	max-width: 500px;
 }
 
+h4#work {
+		padding: 35% 0;
+	}
+
+.gallery img:hover {
+	filter: grayscale(100%)
+}
+
 
 /* ******************************* NATIVE STYLES ******************************* */
 
@@ -238,6 +254,7 @@ footer p {
 
 	h4#work {
 		margin: 30% 0 20%;
+		padding: 35% 0;
 	}
 
 
@@ -304,6 +321,7 @@ footer p {
 
 	h4#work {
 		margin: 60% 0 20%;
+		padding: 20% 0;
 	}
 
 }
