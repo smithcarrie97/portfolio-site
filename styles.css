@@ -99,6 +99,7 @@ img {
 }
 
 
+
 .logo {
 	max-width: 80px;
 	display: inline-block;
@@ -164,6 +165,11 @@ footer p {
 	color:white;
 	font-weight: bold;
 }
+
+.gallery img {
+	max-width: 500px;
+}
+
 
 /* ******************************* NATIVE STYLES ******************************* */
 
